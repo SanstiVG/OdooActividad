@@ -12,6 +12,8 @@ services:
       - ./volumesOdoo/addons:/mnt/extra-addons
       - ./volumesOdoo/odoo/filestore_SVG:/var/lib/odoo/filestore
       - ./volumesOdoo/odoo/sessions_SVG:/var/lib/odoo/sessions
+      - ./volumesOdoo/config_odoo:/etc/odoo
+      - ./volumesOdoo/log:/var/log/odoo
     environment:
       - HOST=db
       - USER=odoo
